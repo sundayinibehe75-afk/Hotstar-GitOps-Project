@@ -3,10 +3,10 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "bucket1" {
-  bucket = "hotstaremmanuel"
+  bucket = "flangt"
 
   tags = {
-    Name        = "hotstaremmanuel"
+    Name        = "flangt"
     Environment = "dev"
   }
 }
@@ -19,7 +19,7 @@ resource "aws_s3_bucket_versioning" "bucket1_versioning" {
 }
 
 resource "aws_s3_bucket" "bucket2" {
-  bucket = "hotstaremma"
+  bucket = "stein"
 
   tags = {
     Name        = "hotstaremma"
