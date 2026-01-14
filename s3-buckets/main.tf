@@ -22,7 +22,7 @@ resource "aws_s3_bucket" "bucket2" {
   bucket = "stein"
 
   tags = {
-    Name        = "hotstaremma"
+    Name        = "stein"
     Environment = "dev"
   }
 }
