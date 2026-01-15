@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "hotstaremmanuel"
+    bucket = "flangt-bucket"
     key    = "ec2/terraform.tfstate"
     region = "us-east-1"
   }
