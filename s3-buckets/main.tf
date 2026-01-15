@@ -3,10 +3,10 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "bucket1" {
-  bucket = "flangt"
+  bucket = "flangt-bucket"
 
   tags = {
-    Name        = "flangt"
+    Name        = "flangt-bucket"
     Environment = "dev"
   }
 }
@@ -19,10 +19,10 @@ resource "aws_s3_bucket_versioning" "bucket1_versioning" {
 }
 
 resource "aws_s3_bucket" "bucket2" {
-  bucket = "stein"
+  bucket = "stein-bucket"
 
   tags = {
-    Name        = "stein"
+    Name        = "stein-bucket"
     Environment = "dev"
   }
 }
